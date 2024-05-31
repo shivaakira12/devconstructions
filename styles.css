@@ -408,11 +408,67 @@ section {
 	color: var(--light-color);
 }
 
-
-
-
-
 /*---------*/
+
+
+
+/*project styling*/
+.projects {
+	background-color: var(--black);
+}
+
+.projects .projects-box-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	gap: 2rem;
+	margin-top: 3rem;
+}
+
+.projects .projects-box-container .projects-box {
+	cursor: initial;
+}
+
+.projects .projects-box-container .projects-box .image {
+	height: 40rem;
+	overflow: hidden;
+}
+
+.projects .projects-box-container .projects-box .image img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.project-content {
+	display: flex;
+	gap: .5rem;
+	background-color: var(--white);
+	justify-content: space-between;
+}
+
+.project-info {
+	padding: 1rem 2rem;
+}
+
+.project-info h3 {
+	font-size: 1.7rem;
+}
+
+.project-info p {
+	font-size: 1.5rem;
+}
+
+.project-content i {
+	width: 7.7rem;
+	font-size: 3rem;
+	background-color: var(--yellow);
+	color: var(--white);
+	text-align: center;
+	line-height: 7.5rem;
+}
+
+
 
 /* media queries */
 
