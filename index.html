@@ -4,9 +4,240 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--custom css file link-->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!--fonts awesome cdn link-->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!--swiperjs cdn link-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>Dev Constructions</title>
   </head>
   <body>
-    <h1>Dev Constructions</h1>
+    <!--header sections starts here-->
+    <header class="header">
+      <a href="#" class="logo">Dev<span>Constructions</span></a>
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#services">services</a>
+        <a href="#projects">projects</a>
+        <a href="#contact">contact</a>
+      </nav>
+      <div class="icons">
+        <div id="menu-btn" class="fa-solid fa-bars"></div>
+        <div id="info-btn" class="fa-solid fa-circle-info"></div>
+      </div>
+    </header>
+
+    <div class="contact-info">
+      <div id="close-contact-info" class="fas fa-times"></div>
+
+      <div class="info">
+        <i class="fas fa-phone"></i>
+        <h3>phone number</h3>
+        <p>+91 63661683154</p>
+        <!-- <p>+111-222-3333</p> -->
+      </div>
+      <div class="info">
+        <i class="fas fa-envelope"></i>
+        <h3>email</h3>
+        <p>Deva3646reddy@gmail.com</p>
+      </div>
+      <div class="info">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>office address</h3>
+        <p>
+          Bypass road,HireMagalur,<br />Chikkamagaluru,Karnataka,India - 577101
+        </p>
+      </div>
+      <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+      </div>
+    </div>
+    <!--header sections ends here-->
+
+    <!--home sections starts here-->
+    <section class="home" id="home">
+      <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+          <section
+            class="swiper-slide slide"
+            style="background: url(/images/slider1.jpeg)"
+          >
+            <div class="content">
+              <h3>we provide best service</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                ex sint qui? Repudiandae minima, id voluptate magnam omnis
+                corporis. Necessitatibus iure incidunt corrupti suscipit nulla
+                reprehenderit quae dolorem iusto esse!
+              </p>
+              <div class="a">
+                <a href="#" class="btn">Get Started</a>
+              </div>
+            </div>
+          </section>
+
+          <section
+            class="swiper-slide slide"
+            style="background: url(images/slider2.jpeg)"
+          >
+            <div class="content">
+              <h3>from concept the creation</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                ex sint qui? Repudiandae minima, id voluptate magnam omnis
+                corporis. Necessitatibus iure incidunt corrupti suscipit nulla
+                reprehenderit quae dolorem iusto esse!
+              </p>
+              <div class="a">
+                <a href="#" class="btn">Get Started</a>
+              </div>
+            </div>
+          </section>
+
+          <section
+            class="swiper-slide slide"
+            style="background: url(/images/slider3.jpeg)"
+          >
+            <div class="content">
+              <h3>making dream come to life</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                ex sint qui? Repudiandae minima, id voluptate magnam omnis
+                corporis. Necessitatibus iure incidunt corrupti suscipit nulla
+                reprehenderit quae dolorem iusto esse!
+              </p>
+              <div class="a">
+                <a href="#" class="btn">Get Started</a>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+    <!--home sections ends here-->
+
+    <!--about sections starts here-->
+    <section class="about" id="about">
+      <h1 class="heading">About Us</h1>
+      <div class="row">
+        <div class="video">
+          <video src="images/about-video.mp4" loop muted autoplay></video>
+        </div>
+        <div class="about-content">
+          <h3>We will provide you the best work which you dreamt for!</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+            praesentium fuga, iure cum error consequatur recusandae sunt numquam
+            inventore quaerat delectus molestiae ipsam doloribus! Labore
+            aspernatur perspiciatis placeat dolor similique.
+          </p>
+          <div class="about-btn-container">
+            <a href="#services" class="about-btn">Read More</a>
+          </div>
+        </div>
+        <div class="box-container">
+          <div class="box">
+            <h3>20+</h3>
+            <p>years of experience</p>
+          </div>
+
+          <div class="box">
+            <h3>200+</h3>
+            <p>project completed</p>
+          </div>
+
+          <div class="box">
+            <h3>100%</h3>
+            <p>Work Accuracy</p>
+          </div>
+
+          <div class="box">
+            <h3>100+</h3>
+            <p>Active workers</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--about sections ends here-->
+
+    <!--services sections starts here-->
+
+    <!--services sections ends here-->
+    <section class="services" id="services">
+      <h1 class="heading">Our Services</h1>
+      <div class="services-box-container">
+        <div class="servicesbox">
+          <img src="/images/arch.png" />
+          <h3>Architectural Design</h3>
+          <p>
+            Our architects create functional and stunning spaces tailored to
+            your needs and style.
+          </p>
+        </div>
+
+        <div class="servicesbox">
+          <img src="/images/2.png" />
+          <h3>Construction and Planning</h3>
+          <p>
+            We handle every stage of construction, ensuring seamless execution
+            and on-time completion.
+          </p>
+        </div>
+
+        <div class="servicesbox">
+          <img src="/images/3.png" />
+          <h3>Residential Housing Projects</h3>
+          <p>
+            We specialize in crafting beautiful and livable spaces for families
+            of all sizes.
+          </p>
+        </div>
+
+        <div class="servicesbox">
+          <img src="/images/4.png" />
+          <h3>Commercial Projects</h3>
+          <p>
+            Design spaces that elevate your brand and functionality, fostering
+            productivity and customer engagement.
+          </p>
+        </div>
+
+        <div class="servicesbox">
+          <img src="/images/5.png" />
+          <h3>Interior Design and Execution</h3>
+          <p>
+            Our designers create harmonious and aesthetically pleasing interiors
+            that reflect your vision.
+          </p>
+        </div>
+
+        <div class="servicesbox">
+          <img src="images/6.png" />
+          <h3>Major Renovations Projects</h3>
+          <p>
+            We handle complex renovations, seamlessly integrating your existing
+            structure with modern design.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--swiper js file link-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--custom js file link-->
+    <script src="js/script.js"></script>
   </body>
 </html>
