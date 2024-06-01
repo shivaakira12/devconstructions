@@ -49,3 +49,12 @@ var swiper = new Swiper(".logo-slider", {
     },
   },
 });
+
+var swiper = new Swiper(".swiper-container", {
+  loop: true,
+  grabCursor: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
