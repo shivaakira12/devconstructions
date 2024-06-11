@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>orders</title>
+
+    <!--custom css file link-->
+    <link rel="stylesheet" href="admin.css" />
+    <!--fonts awesome cdn link-->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"
+      integrity="sha512-kwJUhJJaTDzGp6VTPBbMQWBFUof6+pv0SM3s8fo+E6XnPmVmtfwENK0vHYup3tsYnqHgRDoBDTJWoq7rnQw2+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- header section starts  -->
+    <header class="header">
+      <section class="flex">
+        <a href="../admin/dashboard.php" class="logo"
+          >Admin<span>Panel</span></a
+        >
+        <nav class="navbar">
+          <a href="">home</a>
+          <a href="">projects</a>
+          <a href="">services</a>
+          <a href="">workers</a>
+          <a href="">brands</a>
+          <a href="">messages</a>
+        </nav>
+        <div class="icons">
+          <div id="menu-btn" class="fas fa-bars"></div>
+          <div id="user-btn" class="fas fa-user"></div>
+        </div>
+        <div class="profile">
+          <a href="" class="btn">update profile</a>
+        </div>
+      </section>
+    </header>
+
+    <!-- header section ends -->
+
+    <?php include '../components/admin_header.php' ?>
+
+<!-- add products section starts  -->
+
+<section class="add-products">
+
+   <form action="" method="POST" enctype="multipart/form-data">
+      <h3>add product</h3>
+      <input type="text" required placeholder="enter product name" name="name" maxlength="100" class="box">
+      <input type="number" min="0" max="9999999999" required placeholder="enter product price" name="price" onkeypress="if(this.value.length == 10) return false;" class="box">
+      <select name="category" class="box" required>
+         <option value="" disabled selected>select category --</option>
+         <option value="main dish">main dish</option>
+         <option value="fast food">fast food</option>
+         <option value="drinks">drinks</option>
+         <option value="desserts">desserts</option>
+      </select>
+      <input type="file" name="image" class="box" accept="image/jpg, image/jpeg, image/png, image/webp" required>
+      <input type="submit" value="add product" name="add_product" class="btn">
+   </form>
+</section>
+
+<!-- add products section ends -->
+
+<!-- show products section starts  -->
+
+<section class="show-products" style="padding-top: 0;">
+   <div class="box-container">
+   <div class="box">
+      <img src="images/p1.webp	" alt="">
+      <div class="flex">
+         <div class="price"><span>$</span>10<span>/-</span></div>
+         <div class="category">Category</div>
+      </div>
+      <div class="name">Name</div>
+      <div class="flex-btn">
+         <a href="#" class="option-btn">update</a>
+         <a href="#" class="delete-btn" onclick="return confirm('delete this product?');">delete</a>
+      </div>
+	</div>
+	<div class="box">
+		<img src="images/p1.webp	" alt="">
+		<div class="flex">
+		   <div class="price"><span>$</span>10<span>/-</span></div>
+		   <div class="category">Category</div>
+		</div>
+		<div class="name">Name</div>
+		<div class="flex-btn">
+		   <a href="#" class="option-btn">update</a>
+		   <a href="#" class="delete-btn" onclick="return confirm('delete this product?');">delete</a>
+		</div>
+	  </div>
+	  <div class="box">
+		<img src="images/p3.webp	" alt="">
+		<div class="flex">
+		   <div class="price"><span>$</span>10<span>/-</span></div>
+		   <div class="category">Category</div>
+		</div>
+		<div class="name">Name</div>
+		<div class="flex-btn">
+		   <a href="#" class="option-btn">update</a>
+		   <a href="#" class="delete-btn" onclick="return confirm('delete this product?');">delete</a>
+		</div>
+	  </div>
+	  <div class="box">
+		<img src="images/p2.webp	" alt="">
+		<div class="flex">
+		   <div class="price"><span>$</span>10<span>/-</span></div>
+		   <div class="category">Category</div>
+		</div>
+		<div class="name">Name</div>
+		<div class="flex-btn">
+		   <a href="#" class="option-btn">update</a>
+		   <a href="#" class="delete-btn" onclick="return confirm('delete this product?');">delete</a>
+		</div>
+	  </div>
+   </div>
+</section>
+<!-- show products section ends -->
+
+
+
+
+      <div class="credit">
+        &copy; copyright @ by <span>mr. web designer</span> | all rights
+        reserved!
+      </div>
+    </footer>
+
+    <!--custom js file link-->
+    <script src="admin.js"></script>
+  </body>
+</html>

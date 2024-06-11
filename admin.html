@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--custom css file link-->
+    <link rel="stylesheet" href="admin.css" />
+    <!--fonts awesome cdn link-->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"
+      integrity="sha512-kwJUhJJaTDzGp6VTPBbMQWBFUof6+pv0SM3s8fo+E6XnPmVmtfwENK0vHYup3tsYnqHgRDoBDTJWoq7rnQw2+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Dev Constructions</title>
+  </head>
+  <body>
+    <header class="header">
+      <section class="flex">
+        <a href="../admin/dashboard.php" class="logo"
+          >Admin<span>Panel</span></a
+        >
+        <nav class="navbar">
+          <a href="">home</a>
+          <a href="">projects</a>
+          <a href="">services</a>
+          <a href="">workers</a>
+          <a href="">brands</a>
+          <a href="">messages</a>
+        </nav>
+        <div class="icons">
+          <div id="menu-btn" class="fas fa-bars"></div>
+          <div id="user-btn" class="fas fa-user"></div>
+        </div>
+        <div class="profile">
+          <a href="" class="btn">update profile</a>
+        </div>
+      </section>
+    </header>
+
+    <section class="dashboard">
+      <h1 class="heading">dashboard</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <h3><span>Total Messages</span><span></span></h3>
+          <p>12</p>
+          <a href="projects.html" class="btn">see messages</a>
+        </div>
+        <div class="box">
+          <h3><span>Total Services</span><span></span></h3>
+          <p>6</p>
+          <a href="#" class="btn">see services</a>
+        </div>
+        <div class="box">
+          <h3><span>Total Projects</span></h3>
+          <p>5</p>
+          <a href="#" class="btn">see projects</a>
+        </div>
+
+        <div class="box">
+          <h3><span>Total workers</span><span></span></h3>
+          <p>12</p>
+          <a href="#" class="btn">see workers</a>
+        </div>
+        <div class="box">
+          <h3><span>Total Brands</span><span></span></h3>
+          <p>6</p>
+          <a href="#" class="btn">see brands</a>
+        </div>
+      </div>
+    </section>
+
+    <!--custom js file link-->
+    <script src="admin.js"></script>
+    <!-- <script>
+      lightGallery(document.querySelector(".projects .projects-box-container"));
+    </script> -->
+  </body>
+</html>
